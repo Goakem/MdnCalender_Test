@@ -12,13 +12,13 @@ function createCalendar(month) {
 
   // ADD CONDITIONAL HERE
   
-    /*if(month === "January" || month === "March" || month === "May" || month === "July" || month === "August" || month === "October" || month === "December"){
-        return days = 31;
+    if(month === "January" || month === "March" || month === "May" || month === "July" || month === "August" || month === "October" || month === "December"){
+         days = 31;
     }else if(month === "September" || month === "April" || month === "June" || month === "November"){
-        return days = 30;
+         days = 30;
     }else{
-        return days = 28; // Note that we are not considering leap year in this code.
-    }*/
+         days = 28; // Note that we are not considering leap year in this code.
+    }
 
 
 
