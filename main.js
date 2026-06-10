@@ -11,17 +11,17 @@ function createCalendar(month) {
   let days = 31;
 
   // ADD CONDITIONAL HERE
-  if(month === "January" || month === "March" || month === "May" || month === "July" || month === "August" || month === "October" || month === "December") {
-    return days = 31;
-    
-    elseif(month === "September" || month === "April" || month === "June" || month === "November"){
+  
+    if(month === "January" || month === "March" || month === "May" || month === "July" || month === "August" || month === "October" || month === "December"){
+        return days = 31;
+    }else if(month === "September" || month === "April" || month === "June" || month === "November"){
         return days = 30;
     }else{
-        return days = 28;
+        return days = 28; // Note that we are not considering leap year in this code.
     }
-  }
 
-  
+
+
   list.textContent = "";
   h1.textContent = month;
   for (let i = 1; i <= days; i++) {
